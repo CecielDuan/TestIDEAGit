@@ -14,9 +14,7 @@ public class LoginHandlerIntercepter implements HandlerInterceptor {
         //从session里面获取用户的登录值，得到了，证明登录了，否则就是没有登录；
         Object user = request.getSession().getAttribute("username");
         //如果username是null
-        System.out.println("看看进来了没");
         if(!(user==null)) {
-            System.out.println("到这里了没");
             return true;
         }
         //在登录界面显示消息
