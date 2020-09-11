@@ -28,7 +28,6 @@ public class MyLocaleResolver implements LocaleResolver {
             String[] values = l.split("_");
             //恰巧locale有一个构造器含有这两个参数，传进去就可以了；
            locale = new Locale(values[0],values[1]);
-            System.out.println("演技在线");
         }
         return locale;
     }
